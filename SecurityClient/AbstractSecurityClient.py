@@ -4,9 +4,9 @@ class AbstractSecurityClient():
 	def __init__(self, id, passwd):
 		self.id = id 
 		self.passwd = passwd
-		init()
+		self.init(id, passwd)
 	
-	def init(self): 
+	def init(self, id, passwd): 
 		pass 
 		
 	def login(self): 
@@ -14,3 +14,5 @@ class AbstractSecurityClient():
 		
 	def logout(self): 
 		pass
+		
+	
